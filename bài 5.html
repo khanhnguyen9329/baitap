@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>User :</td>
+        <td><input type="text" id="demo"></td>
+    </tr>
+    <tr>
+        <td>Pass:</td>
+        <td><input type="password" id="demo1"></td>
+    </tr>
+</table>
+<button onclick="register()">Đăng ký</button>
+</body>
+<script>
+    function register(){
+    let a = document.getElementById("demo").value;
+    let b = document.getElementById("demo1").value;
+
+    if (a == "admin"&& b== "123456"){
+        alert("xin chào admin")
+    } else {
+        alert("sai user hoặc pass")
+    }
+
+    }
+</script>
+</html>

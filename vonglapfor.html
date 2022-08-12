@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+</head>
+<body>
+
+<p id="khanh"></p>
+<script>
+    // let content = "<table>"
+    // for (let i = 1; i <= 10; i++) {
+    //     content +="<tr>"
+    //     for (let j = 1 ; j <= 10 ; j++){
+    //      let  result = (i * j);
+    //        content = content + ("<td>"+ j +"x"+ i +"="+ result +"</td>")
+    //     }
+        // content+="<tr>"
+    // }z
+    // content +="<table>"
+    // document.getElementById("khanh").innerHTML= content;
+
+    // for (let i = 1; i <=10 ; i++ ) {
+    //     result = 5 * i
+    //     document.write(5 +"x"+ i + "="+ result +"<br>")
+    // }
+    // let i = 1
+    // while (i <= 10){
+    //     let result = 5 * i
+    //     document.write(5+"x"+i +"="+ result+ "<br>")
+    //     i++
+    // }
+let a = parseInt(prompt("nhập số bất kì"))
+    let check = true
+    for ( let i=2 ; i<a; i++ ){
+         if (a%i ==0) {
+             check = false
+             break
+         }
+    }
+    if (check){
+        alert("là số nguyên tố")
+    }else {
+        alert("ko phải số nguyên tố")
+    }
+
+
+
+
+// for (let i =1 ; i++ <=10; i+=2 ){
+//
+//     document.write(i+";")
+// }
+//     for (let i = 0; i++ < 5 ; alert(i) ) {
+//         i++
+//
+//     }
+//     let i =1
+//     while (i<50){
+//         document.write("<hr width = "+i+ "%>" )
+//         i ++ ;
+//     }
+
+    // for (let i = 0; i < 30; i++) {
+    //
+    //         document.write("*")
+    //     }
+
+    // let i = 5
+    //
+    // let text ="hello"
+    // while (text !== "q"){
+    //     document.write(text+"<br>")
+    //     text++
+    //     text = prompt("nhập vào để dừng chuỗi")
+    // }
+
+
+</script>
+
+</body>
+</html>
