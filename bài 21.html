@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--// tìm min trong mảng-->
+<script>
+
+    function bigArray(arr) {
+        let min = arr[0]
+        let vtri = 0;
+        let kq = []
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i]
+                vtri = i
+            }
+        }
+        kq[1] = vtri
+        kq[2] = min
+        return kq ;
+    }
+
+    let arr1 = [3, 5, 11, 5, 7, 8, 32, 14, 1]
+    let result = bigArray(arr1)
+    document.write(result[2] + " - "+ result[1])
+
+</script>
+</body>
+</html>

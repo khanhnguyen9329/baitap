@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--// giải phương trình bậc 2-->
+<body>
+<h2>Giải phương trình bậc 2 </h2>
+<script>
+    let a = parseInt(prompt("nhập số a"))
+    let b = parseInt(prompt("nhập số b"))
+    let c = parseInt(prompt("nhập số c"))
+    let x1
+    let x2
+    let delta = b*b - 4*a*c
+    let result
+    if (delta<0){
+        result = ( "phương trình vô nghiệm")
+    }else if (delta == 0){
+        x1 = x2 = -b/2*a
+        result = ( "phương trình có nghiệm kép "+"x1 = x2 ="+ x1 )
+    }else {
+        x2 = (-b - Math.sqrt(delta))/ (2*a)
+        x1 = (-b + Math.sqrt(delta))/ ( 2*a)
+        result=( "phương trình có 2 nghiệm phân biệt"+ "x2 ="+ x2 +"   "+"x1 =" + x1 )
+
+
+    }
+    document.write(result)
+</script>
+</body>
+</html>

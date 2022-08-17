@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> Tính tổng 2 số a và b</h2>
+<table>
+    <tr>
+        <td>Nhâp a</td>
+        <td><input type="text" id="demo1"></td>
+    </tr>
+    <tr>
+        <td>Nhập b</td>
+        <td><input type="text" id="demo2" oninput="tinhtong()"></td>
+    </tr>
+    <tr>
+        <td>Kết quả :</td>
+        <td id="demo3"></td>
+    </tr>
+</table>
+<script>
+    function calculate(a, b) {
+        let result = a+b
+        return result
+    }
+    function tinhtong() {
+        let a1 = +document.getElementById("demo1").value
+        let b1 = +document.getElementById("demo2").value
+        let result1 = calculate(a1,b1)
+        document.getElementById("demo3").innerHTML = result1
+    }
+
+</script>
+
+</body>
+</html>

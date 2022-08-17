@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--// Giải phương trình bậc nhất : ax+b=0-->
+<body>
+<h2>Giải phương trình bậc 1 ax+b=0</h2>
+<table>
+    <tr>
+        <td>Nhập số a :</td>
+        <td><input type="number"  id="test"></td>
+    </tr>
+    <tr>
+        <td>Nhập số b :</td>
+        <td><input type="number" id="test1"></td>
+    </tr>
+
+</table>
+<input onclick="demo()" type="submit" value="Tìm nghiệm">
+<p id="demo1"></p>
+</body>
+<script>
+    function demo(){
+        let a = +document.getElementById("test").value
+        let b = +document.getElementById("test1").value
+        let result
+        if (a==0 && b==0 ){
+            result = ( "Phương trình vô số nghiệm")
+        }else if (a!=0&& b==0){
+            result =("phương trinh có nghiệm x = 0")
+        }else if (a==0 && b!=0){
+            result=( " phương trình vô nghiệm")
+
+        }else {
+            result = ("phương trình có nghiệm x = (-b/a)")
+
+        }    document.getElementById("demo1").innerHTML = result
+    }
+
+</script>
+</html>

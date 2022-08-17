@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--//hiển thị số nguyên tố từ 5 > 20-->
+
+<body>
+<div id="hienthi"></div>
+<script>
+// let a = prompt("nhâp số bất kì")
+let result=""
+for (let a = 5; a <=20 ; a++) {
+    let check= true
+    for (let i = 2; i < a ; i++) {
+        if(a%i==0){
+            check= false
+            break
+        }
+    }
+    if (check){
+       result += a +"là số nt"+"<br>"
+    } else {
+        document.write(a+ "ko phải số nt"+"<br>")
+    }
+}
+document.getElementById("hienthi").innerHTML=result
+</script>
+
+</body>
+</html>
